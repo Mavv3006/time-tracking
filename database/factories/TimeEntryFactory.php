@@ -13,8 +13,8 @@ class TimeEntryFactory extends Factory
     public function definition(): array
     {
         return [
-            'start_time' => Carbon::now(),
-            'end_time' => Carbon::now(),
+            'start_time' => Carbon::now()->subHours(3),
+            'end_time' => Carbon::now()->addHours(4),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
         ];
